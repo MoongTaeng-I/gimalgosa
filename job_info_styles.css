@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.top-bar {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.top-bar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.search-icon {
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: #0073b1;
+    position: relative;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    position: relative;
+    transition: all 0.3s;
+}
+
+nav ul.menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+nav ul.menu li a:hover::after {
+    width: 100%;
+}
+
+.search-section {
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+.basic-search {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.basic-search h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0073b1;
+}
+
+.basic-search form {
+    display: grid;
+    gap: 10px;
+}
+
+.basic-search label {
+    display: block;
+    color: #333333;
+}
+
+.basic-search input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005b8a;
+    transition: background-color 0.3s;
+}
+
+.job-results {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.job-results h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0073b1;
+}
+
+.job-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    margin-top: 0;
+}
+
+.job-card p {
+    margin: 5px 0;
+}
+
+.apply-btn {
+    padding: 10px 20px;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.apply-btn:hover {
+    background-color: #005b8a;
+    transition: background-color 0.3s;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구직 웹사이트</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="index.html">홈</a>
+            <a href="login.html">로그인</a>
+            <a href="register.html">회원가입</a>
+            <a href="#">마이페이지</a>
+            <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="job_info.html">일자리정보</a></li>
+                <li><a href="consulting.html">취업컨설팅</a></li>
+                <li><a href="services.html">기타 서비스</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="2.jpg" alt="슬라이드 이미지 1">
+                    </div>
+                    <div class="slide">
+                        <img src="1.jpg" alt="슬라이드 이미지 2">
+                    </div>
+                    <div class="slide">
+                        <img src="3.jpg" alt="슬라이드 이미지 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="search-section">
+            <div class="basic-search">
+                <h2>기본검색</h2>
+                <form>
+                    <label for="keyword">검색키워드</label>
+                    <input type="text" id="keyword">
+                    <label for="region">근무지역</label>
+                    <input type="text" id="region">
+                    <label for="job-type">희망직종</label>
+                    <input type="text" id="job-type">
+                    <div class="checkbox-group">
+                        <label>경력</label>
+                        <input type="checkbox" id="all" name="experience"><label for="all">전체</label>
+                        <input type="checkbox" id="no-exp" name="experience"><label for="no-exp">경력무관</label>
+                        <input type="checkbox" id="entry" name="experience"><label for="entry">신입</label>
+                        <input type="checkbox" id="exp" name="experience"><label for="exp">경력</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label>등록기간</label>
+                        <input type="checkbox" id="all-period" name="registration-period"><label for="all-period">전체</label>
+                        <input type="checkbox" id="today" name="registration-period"><label for="today">오늘</label>
+                        <input type="checkbox" id="3-days" name="registration-period"><label for="3-days">3일</label>
+                        <input type="checkbox" id="1-week" name="registration-period"><label for="1-week">1주 이내</label>
+                        <input type="checkbox" id="2-weeks" name="registration-period"><label for="2-weeks">2주 이내</label>
+                        <input type="checkbox" id="1-month" name="registration-period"><label for="1-month">한달</label>
+                    </div>
+                    <button type="submit">검색</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
